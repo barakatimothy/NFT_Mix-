@@ -1,0 +1,20 @@
+dependencies:
+   openzeppelin:
+     - 'Openzeppelin/openzeppelin-contracts@3.4.0'
+     - 'smartcontractkit/chainlink-brownie-contracts@1.1.1'
+compiler:
+  solc:
+  remappings:
+    - '@openzeppelin = Openzeppelin/openzeppelin-contracts@3.4.0'
+    -'@chainlik = smartcontractkit/chainlink-brownie-contracts@1.1.1'
+wallets:
+  from_key: ${PRIVATE_KEY}
+networks:
+  development:
+   keyhash: 'ox'
+   fee: 100000000000000000 #0.1 
+  rinkeby:
+   vrf_coordinator: 'ox'
+   link_token: 'ox'
+   key_hash:  
+   fee: 100000000000000000 #0.1 
